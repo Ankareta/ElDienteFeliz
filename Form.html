@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/style/formstyle.css">
+</head>
+<body>
+
+
+
+    
+
+    <h1>Agenda una cita </h1>
+    <div>  <form action="procesar_formulario" method="post"></form>
+
+    <br>
+
+
+    <h3>Ingresa tus datos:</h3>
+    <!-- Esta etiqueta se utiliza para crear campos de entrada en un formulario -->
+    <label for="usuario">Nombre completo</label>
+    <input type="text" name="nombre" placeholder="Nombre Completo">
+    <br>
+    <br><label for="tel">Numero de celular: </label>
+    <input type="tel" maxlength="10" name="tel" placeholder="Telefono a 10 digitos">
+    <!-- type: define el tipo de entrada (texto, correo, contrasena, etc) -->
+    <!-- name: es e nombre del campo, utilizado para identificar el dato cuando se env[ia e formulario  -->
+    <!-- placeholder: proporciona un texto ejemplo dentro del campo de entrada -->
+    <br>
+    <br>
+    <!-- Crear un campo de entrada para que el usuario ingrese un e-mail -->
+    <label for="email">Correo electronico:</label>
+    <input type="email" name="correo">
+
+<br>
+<br>
+    <label for="doctor">Selecciona a tu doctor:</label>
+    <select name="pais" required>
+        <option value="" disabled selected>Elige una opcion</option>
+        <option value="perez">Dr. Luis Perez</option>
+        <option value="jimenez">Dra. Carla Jimenez</option>
+        <option value="robles">Dra. Ana robles</option>
+        <option value="campos">Dr. Jairo Campos</option>
+      </select>
+<br>
+<br>
+<label for="fecha">Fecha y hora: </label><input type="time" name="hora">
+<!-- Crear un campo de entrada, permite al usuario ingresar una fecha -->
+<input type="date" name="fecha">
+
+
+    
+<br>
+<br>
+
+
+<h3>Comentarios Adicionales: </h3>
+<!-- Se utiliza para crear campos de texto en un formulario -->
+<textarea name="comentario" id="comentario" cols="50" rows="5"></textarea>
+<br>
+<br>
+
+
+
+
+<br>
+
+<!-- Crea un campo de entrada, perite elegir la hora -->
+
+<br>
+
+
+
+<br>
+
+
+<!-- Se utiliza para crear botones en un formulario -->
+
+<form action="/procesar_formulario" method="post">
+    <input type="submit" value="Enviar">
+</form>
+<br>
+<button type="reset">Restablecer</button>
+ <!-- type: define el tipo de botón (submit, reset, button) -->
+ <!-- name: es el nombre del botón, utilizado para identificar el botón cuando se envió el formulario -->
+
+</div>
+</body>
+</html>
